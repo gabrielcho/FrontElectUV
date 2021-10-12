@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import CourseCard from './components/CourseCard'
 import './App.css';
 import { display } from '@mui/system';
+import {BrowserRouter as Router, Route, Switch} from react-router-dom;
 
 function App() {
 return (
