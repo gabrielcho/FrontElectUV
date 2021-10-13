@@ -1,0 +1,19 @@
+.CourseDiv{
+
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+    grid-template-areas:
+    "f1"
+    "f2"
+}
+
+.f1 {
+    grid-area: f1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.f2 {
+    grid-area:f2;
+}

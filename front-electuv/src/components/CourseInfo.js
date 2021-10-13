@@ -7,7 +7,7 @@ import Chip from "@mui/material/Chip";
 import CommentIcon from "@mui/icons-material/Comment";
 import Grid from "@mui/material/Grid";
 
-export default function CourseInfo({courseName, courseCode, courseId, courseRating, reviewCount, courseDescription, courseFaculty}) {
+export default function CourseInfo({courseName, courseCode, courseRating, reviewCount, courseDescription, courseFaculty}) {
   return (
     <Card sx={{ maxWidth: 850 }}>
       <CardContent>
@@ -35,7 +35,7 @@ export default function CourseInfo({courseName, courseCode, courseId, courseRati
           </Grid>
         </Grid>
 
-        <Typography paragraph="true" variant="body1" color="text.secondary">
+        <Typography paragraph={true} variant="body1" color="text.secondary">
           {courseDescription}
         </Typography>
         <Grid container spacing={4}>

@@ -7,11 +7,24 @@ import StarIcon from "@mui/icons-material/Star";
 import Chip from "@mui/material/Chip";
 import CommentIcon from "@mui/icons-material/Comment";
 import Grid from "@mui/material/Grid";
+import {Link} from "react-router-dom";
+
 
 export default function CourseCard({courseName, courseCode, courseId, courseRating, reviewCount, courseDescription, courseFaculty}) {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
+      <CardActionArea component={Link} to={ {
+        pathname: `/curso/${courseId}`,
+        state: {
+          courseName: courseName,
+          courseCode: courseCode,
+          courseId: courseId,
+          courseRating: courseRating,
+          reviewCount: reviewCount,
+          courseDescription: courseDescription,
+          courseFaculty: courseFaculty
+        }
+      }}>
         <CardContent>
           <Typography
             align="center"
@@ -32,7 +45,7 @@ export default function CourseCard({courseName, courseCode, courseId, courseRati
             {courseCode}
           </Typography>
 
-          <Typography paragraph="true" variant="body1" color="text.secondary">
+          <Typography paragraph={true} variant="body1" color="text.secondary">
             {courseDescription}
           </Typography>
           <Grid container spacing={4} >
