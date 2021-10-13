@@ -6,13 +6,21 @@ import StarIcon from "@mui/icons-material/Star";
 import Chip from "@mui/material/Chip";
 import Grid from "@mui/material/Grid";
 
+
+
+
 export default function Review({reviewId, rating, authorName, teacherName, reviewPeriod, reviewDate, reviewTitle, reviewContent }) {
+
+
+
+
+
   return (
     <Card align="center" sx={{ maxWidth: 900}}>
       <CardContent>
 
         <Grid container spacing={4}>
-          
+
           <Grid item>
             <Typography
               align="left"
