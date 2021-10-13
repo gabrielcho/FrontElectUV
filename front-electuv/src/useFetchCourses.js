@@ -6,8 +6,8 @@ export default function useFetchCourses() {
     console.log()
 
     useEffect(() => {
-        console.log(process.env.REACT_APP_API_ADDRESS + `courses`)
-        fetch(process.env.REACT_APP_API_ADDRESS + `courses`,{
+        console.log(process.env.REACT_APP_API_ADDRESS + `cursos`)
+        fetch(process.env.REACT_APP_API_ADDRESS + `cursos`,{
 	        'mode': 'cors',
 	        'headers': {
             	'Access-Control-Allow-Origin': '*',
@@ -16,9 +16,10 @@ export default function useFetchCourses() {
         .then(res => {
             return res.json();
         }).then(data => {
+            console.log(data[0]);
             setCourses(data);
         });
     }, []);
 
-    return courses;
+    return {courses};
 }

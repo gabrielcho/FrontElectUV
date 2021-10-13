@@ -8,16 +8,15 @@ export default function ReviewList({courseId}) {
 
     const {reviews} = useFetch(courseId);
 
-    
-    //There should be a stack inside this return
+
     return (
         <Stack spacing={2}>
             { reviews ? reviews.map((review, counter) => {
                     console.log(review);
                     return (
-                    <div>
+                    <div key={counter}>
                         <Review 
-                        key={String.toString(counter)}
+                        key={counter}
                         rating={review.rating} 
                         authorName={review.author}
                         teacherName={review.teacher}
