@@ -50,15 +50,15 @@ export default function Review({reviewId, rating, authorName, teacherName, revie
         </Grid>
 
 
-        <Typography mt={"20px"} paragraph="true" variant="body1" color="text.secondary">
+        <Typography mt={"20px"} paragraph={true} variant="body1" color="text.secondary">
           {reviewContent}
         </Typography>
 
-        <Typography align="right" mb={"1px"} mt={"20px"} paragraph="true" variant="body1" color="text.secondary">
+        <Typography align="right" mb={"1px"} mt={"20px"} paragraph={true}  variant="body1" color="text.secondary">
           {authorName}
         </Typography>
 
-        <Typography align="right" mb={"0px"} paragraph="true" variant="body1" color="text.secondary">
+        <Typography align="right" mb={"0px"} paragraph={true} variant="body1" color="text.secondary">
           {reviewDate}
         </Typography>
 
