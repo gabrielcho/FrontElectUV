@@ -33,7 +33,7 @@ export default function CoursePage(){
             courseDescription={courseDescription}
             courseFaculty={courseFaculty}
             className='g f1'/>
-            <ReviewList courseId={1}/>    
+            <ReviewList courseId={courseId}/>    
         </div>
     )
 }

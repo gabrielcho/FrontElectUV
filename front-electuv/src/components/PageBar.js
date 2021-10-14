@@ -12,18 +12,11 @@ export default function PageBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{background: "#CD1F32"}} >
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
+
+
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           ElectUV
           </Typography>
-          <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
     </Box>
