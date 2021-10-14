@@ -10,7 +10,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 export default function PageBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" sx={{background: "#CD1F32"}} >
         <Toolbar>
           <IconButton
             size="large"
@@ -21,7 +21,7 @@ export default function PageBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
+          ElectUV
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>

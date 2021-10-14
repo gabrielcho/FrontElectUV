@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import PageBar from './components/PageBar'
 import CoursePage from './templates/CoursePage';
 import CourseCardBox from './components/CourseCardBox';
+import Container from '@mui/material/Container';
 
 
 function App() {
@@ -12,11 +13,12 @@ function App() {
 
 
 return (
+  <Container>
   <Router>
+
     <div className='App'>
       <PageBar/>
       <div className='content'>
-
         <Route exact path='/'>
           <CourseCardBox/>
         </Route>
@@ -24,11 +26,11 @@ return (
         <Route path='/curso/:id'>
           <CoursePage/>
         </Route>
+      </div>    
+  
       </div>
-      
-
-    </div>
   </Router>
+  </Container>
 );
 }
 
